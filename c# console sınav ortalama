@@ -1,0 +1,34 @@
+int sınav1, sınav2, sınav3, ortalama;
+            string name;
+            Console.WriteLine("Lütfen isminizi giriniz");
+            name = Console.ReadLine();
+            Console.WriteLine("merhaba" +" "+ name + " " + "sınav notlarınızı sırasıyla giriniz");
+            
+            sınav1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("1. notunuz" + " " + sınav1);
+            sınav2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2. notunuz" + " " + sınav2);
+            sınav3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("3. notunuz" + " " + sınav3);
+            ortalama = (sınav1 + sınav2 + sınav3) / 3;
+            
+            if (ortalama>0 && ortalama < 40)
+            {
+                Console.WriteLine("malesef ortalaman=" + ortalama + " ");
+                Console.WriteLine("Durum=Çok kötü" + " " + "baya çalışmalısın dostum");
+            }
+
+            else if (ortalama>40 && ortalama < 70)
+            {
+                Console.WriteLine("Ortalaman:" + ortalama  );
+                Console.WriteLine("Durum=idare eder" + " " + "fena değilsin");
+            }
+
+            else if(ortalama>70 && ortalama < 100)
+            {
+                Console.WriteLine("Ortalaman:" + ortalama + " ");
+                Console.WriteLine("Durum=fenasın başa belasın" + " " + " yürü kocum kim tutar seni");
+            }
+
+
+            Console.Read();
