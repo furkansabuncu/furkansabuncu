@@ -1,0 +1,23 @@
+string mevsim;
+            Console.WriteLine("mevsimlerden aylarını öğrenmek istediğinizin adını küçük harflerle giridiniz");
+            mevsim = (Console.ReadLine());
+
+            switch (mevsim)
+            {
+                case "yaz":Console.WriteLine("haziran temmuz ağustos");
+                    break;
+                case "kış":Console.WriteLine("aralık ocak şubat");
+                    break;
+                case "sonbahar":Console.WriteLine("eylül ekim kasım");
+                    break;
+                case "ilkbahar":Console.WriteLine("mart nisan mayıs");
+                    break;
+                default:Console.WriteLine("böyle bir mevsim malesef yok");
+                    break;
+
+                {
+
+                }
+            }
+           
+            Console.Read();
