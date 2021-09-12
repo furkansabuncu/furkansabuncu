@@ -1,0 +1,6 @@
+int i;
+            for (i=1;i<=50;i+=1)
+            {
+                Console.WriteLine(i);
+            }
+            Console.Read();
