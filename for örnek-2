@@ -1,0 +1,8 @@
+Console.WriteLine("*****1 ile 10 arasındaki sayıların toplamı*****");
+            int i, toplam = 0;
+            for (i = 1; i <= 10; i += 1)
+            {
+                toplam = toplam + i;
+            }
+            Console.Write("toplam:" + toplam);
+            Console.Read();
