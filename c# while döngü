@@ -1,0 +1,11 @@
+ int sayi;
+            Console.WriteLine("sayı giriniz");
+            sayi = Convert.ToInt16(Console.ReadLine());
+            
+            while (sayi % 2 == 0)
+            {
+                Console.WriteLine("sayı giriniz");
+                sayi = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("tebrikler tek sayı girdiniz");
+            Console.Read();
