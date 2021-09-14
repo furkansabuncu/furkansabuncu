@@ -1,0 +1,4 @@
+int[] sayilar = { 1, 2, 3, 4, 5 };
+
+            Console.WriteLine(sayilar[2]);
+            Console.Read();
