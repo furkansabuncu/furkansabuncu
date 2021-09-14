@@ -1,0 +1,20 @@
+int[] sayilar = new int[5];
+
+            for(int i = 0; i < 5; i += 1)
+            {
+                Console.Write((i+1)+ ".sayıyı giriniz");
+                sayilar[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int buyuksayi;
+            buyuksayi = sayilar[0];
+
+            for (int i = 1; i < 5; i += 1)
+            {
+                if (buyuksayi < sayilar[i])
+                {
+                    buyuksayi = sayilar[i];
+                }
+            }
+            Console.WriteLine(buyuksayi);
+           
+            Console.Read();
