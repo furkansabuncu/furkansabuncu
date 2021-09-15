@@ -1,0 +1,10 @@
+int[] rakamlar = { 1, 7, 5, 6, 8 };
+
+            foreach (int sayi in rakamlar)
+            {
+                if (sayi % 2 == 0)
+                {
+                    Console.WriteLine(sayi);
+                }
+            }
+            Console.Read();
