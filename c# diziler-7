@@ -1,0 +1,13 @@
+int[] sayilar = new int[5];
+
+            for (int i = 0; i < 5; i += 1)
+            {
+                Console.WriteLine("sayı giriniz");
+                sayilar[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Array.Sort(sayilar);
+            foreach(int i in sayilar)
+            {
+                Console.WriteLine(i);
+            }
+            Console.Read();
