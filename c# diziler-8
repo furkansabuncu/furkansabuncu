@@ -1,0 +1,13 @@
+int[] sayilar = new int[5];
+
+            for (int i = 0; i < 5; i += 1)
+            {
+                Console.WriteLine("sayı giriniz");
+                sayilar[i] = Convert.ToInt16(Console.ReadLine());
+            }
+            Array.Sort(sayilar);
+            Console.WriteLine("en küçük sayi:" + sayilar[0]);
+            Console.WriteLine("dizi boyutu:" + sayilar.Length);
+            Console.WriteLine("en büyük sayi:" + sayilar[4]);
+
+            Console.Read();
