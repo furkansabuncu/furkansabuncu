@@ -1,0 +1,5 @@
+Random rastgele = new Random();
+            int a;
+            a = rastgele.Next(1, 10);
+            Console.Write(a);
+            Console.Read();
