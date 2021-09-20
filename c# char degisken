@@ -1,0 +1,12 @@
+char cinsiyet;
+            cinsiyet = Convert.ToChar(Console.ReadLine());
+
+            if (cinsiyet =='e'|| cinsiyet=='E')
+            {
+                Console.WriteLine("kişi erkektir");
+            }
+            else if (cinsiyet == 'k' || cinsiyet == 'K')
+            {
+                Console.WriteLine("kişi kızdır");
+            }
+            Console.Read();
