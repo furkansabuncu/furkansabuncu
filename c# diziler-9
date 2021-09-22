@@ -1,0 +1,15 @@
+int[] dizi = new int[5];
+            Console.WriteLine("***OLUŞTURULAN DİZİNİN ELAMANLARINI TERSTEN YAZDIRAN UYG.");
+            for(int i = 0; i < 5; i += 1)
+            {
+                dizi[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+            Array.Reverse(dizi);
+
+            for(int i = 0; i < 5; i += 1)
+            {
+                Console.WriteLine(dizi[i]);
+                    
+            }
+            Console.Read();
