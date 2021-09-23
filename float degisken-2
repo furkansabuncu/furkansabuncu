@@ -1,0 +1,6 @@
+int i = 3;
+            float a = 2.5F;
+            //toplamı int değişkeni olarak yazamayız ve floatta 7 basamaktan fazla yazdığımızda sonraki basamakları görmezde ngelir ve ondalık olarak yazdığımızda sonra f eklemeliyiz..
+            float toplam = a + i;
+            Console.Write(toplam);
+            Console.Read();
