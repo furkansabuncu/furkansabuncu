@@ -1,0 +1,6 @@
+float s1, s2, ortalama;
+            s1 = 45;
+            s2 = 90;
+            ortalama = (s1 + s2) / 2;
+            Console.WriteLine(ortalama);
+            Console.Read();
