@@ -1,0 +1,4 @@
+decimal sayi;
+            sayi=1.2356m;
+            Console.WriteLine(sayi);
+            Console.Read();
