@@ -1,0 +1,11 @@
+ decimal f1, f2, toplam;
+            int s1, s2;
+            f1 = 14.95m;
+            f2 = 13.45m;
+            Console.WriteLine("satılan 1. ürün adedini yazınız");
+            s1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("satılan 2. ürün adedini yazınız");
+            s2 = Convert.ToInt32(Console.ReadLine());
+            toplam = (f1 * s1 + f2 * s2);
+            Console.WriteLine("kasada olması gereken miktar:" + "" + toplam);
+            Console.Read();
