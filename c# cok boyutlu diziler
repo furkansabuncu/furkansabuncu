@@ -1,0 +1,15 @@
+int[,] dizi = new int[2, 2];
+            dizi[0, 0] = 24;
+            dizi[0, 1] = 32;
+            dizi[1, 0] = 12;
+            dizi[1, 1] = 34;
+
+            for(int i = 0; i < 2; i += 1)
+            {
+                for(int u = 0; u < 2; u += 1)
+                
+                    Console.Write(" {0} ",dizi[i, u]);
+                    Console.WriteLine();
+                
+            }
+            Console.Read();
