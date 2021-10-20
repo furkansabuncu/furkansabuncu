@@ -1,0 +1,17 @@
+int[,] matris = new int[3, 2];
+            matris[0, 0] = 10;           
+            matris[0, 1] = 4;
+            matris[1, 0] = 7;
+            matris[1, 1] = 8;
+            matris[2, 0] = 9;
+            matris[2, 1] = 2;
+
+            for(int i = 0; i < 3; i += 1)
+            {
+                for (int j = 0; j < 2; j += 1)
+                Console.Write(" {0} ", matris[i, j]);
+                Console.WriteLine();
+
+                
+            }
+            Console.Read();
