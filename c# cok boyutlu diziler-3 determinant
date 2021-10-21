@@ -1,0 +1,13 @@
+int a, b, c, d, sonuc;
+            Console.Write("A değeri:");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B değeri:");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("C değeri:");
+            c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("D değeri");
+            d = Convert.ToInt32(Console.ReadLine());
+
+            sonuc = Math.Abs((a * c) - (b * d));
+            Console.Write("determinant:" + sonuc);
+            Console.Read();
