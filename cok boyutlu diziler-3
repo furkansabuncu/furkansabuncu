@@ -1,0 +1,30 @@
+int satır, sutun;
+            Console.Write("satır sayısını giriniz:");
+            satır = Convert.ToInt16(Console.ReadLine());
+            Console.Write("sutun sayısını giriniz:");
+            sutun = Convert.ToInt16(Console.ReadLine());
+            int[,] matris = new int[satır, sutun];
+
+            for(int i = 0; i < satır; i += 1)
+            {
+                for(int j = 0; j < sutun; j += 1)
+                {
+                    Console.Write("matrisin {0} x {1} değeri:", i + 1, j + 1);
+                    matris[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for(int m = 0; m < satır; m += 1)
+            {
+                for(int n = 0; n < sutun; n += 1)
+                {
+                    Console.Write(matris[m, n] + " ");
+                    
+                }
+                Console.WriteLine();
+            }
+            
+            
+            
+            
+            
+            Console.Read();
