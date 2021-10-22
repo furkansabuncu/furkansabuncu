@@ -1,0 +1,4 @@
+DateTime zaman;
+            zaman = DateTime.Now;
+            Console.Write(zaman);
+            Console.Read();
