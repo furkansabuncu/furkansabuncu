@@ -1,0 +1,29 @@
+int kenar;
+            Console.WriteLine("OLUŞTURMAK İSTEDİĞİNİZ KARENİN BİR KENARININ YILDIZ SAYISINI GİRİNİZ");
+            kenar = Convert.ToInt32(Console.ReadLine());
+            //karenin ust kısmı
+            for(int i = 0; i < kenar; i+=1)
+            {
+                Console.Write("* ");
+            }
+            //karenin sol kısmı
+            Console.WriteLine();
+            for(int m = 0; m < kenar - 2; m += 1)
+            {
+                Console.Write("*");
+                for(int n = 0; n < kenar-2; n += 1)
+                {
+                    Console.Write("  ");
+                }
+                Console.Write(" *");
+                Console.WriteLine();
+            
+            }
+            
+            // alt kısım
+            for(int y = 0; y < kenar; y += 1)
+            {
+                Console.Write("* ");
+            }
+            
+            Console.Read();
