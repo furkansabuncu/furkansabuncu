@@ -1,0 +1,34 @@
+onsole.WriteLine("baklava dilimi sayısını giriniz");
+            int deger;
+            deger = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            for(int i = 0; i <= deger; i += 1)
+            {
+                for(int x = deger; x>i; x -= 1)
+                {
+                    Console.Write(" ");
+                }
+                for(int y=0;y<i;y+=1)
+                {
+                    Console.Write("*"+" ");
+                }
+                Console.WriteLine();
+            }
+            
+            for(int z = 1; z <= deger; z += 1)
+            {
+                for (int t = 0; t < z; t += 1)
+                {
+                    Console.Write(" ");
+                }
+                for(int f = deger; f > z; f -= 1)
+                {
+                    Console.Write("*"+" ");
+                }
+                Console.WriteLine();
+                
+            }
+            
+            
+            
+            Console.Read();
