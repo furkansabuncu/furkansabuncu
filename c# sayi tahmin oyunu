@@ -1,0 +1,40 @@
+using System;
+
+namespace ConsoleApp45
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("sayı tahmin oyununa hoşgeldin\ntahmin et bakalım bulabilcek misin:");
+
+            
+            int sayac = 0;
+            int tahmin, hafıza;
+            tahmin = 0;
+            Random rastgele = new Random();
+            hafıza = rastgele.Next(1, 100);
+            
+
+            while (tahmin != hafıza)
+            {
+                Console.WriteLine("\n\n1 ile 100 arasında sayı giriniz");
+                sayac++;
+                tahmin = Convert.ToInt32(Console.ReadLine());
+                
+                if (tahmin > hafıza)
+                {
+                    Console.WriteLine("daha küçük sayı giriniz");
+                }
+                else if(tahmin<hafıza)
+                {
+                    Console.WriteLine("daha büyük sayı giriniz");
+                }
+                
+
+            }
+            Console.WriteLine("Tebrikler {0}. denemede buldunuz", sayac);
+            Console.Read();
+        }
+    }
+}
