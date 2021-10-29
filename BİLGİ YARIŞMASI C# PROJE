@@ -1,0 +1,78 @@
+using System;
+
+namespace ConsoleApp44
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int para = 0, dogru = 0, yanlıs = 0;
+            Console.WriteLine("****BİLGİ YARIŞMASI OYUNU****");
+            Console.WriteLine("3 adet soru sorulcak ve her soru 1000 tl değerindedir yanlışlarınız -1000 tldir yani bize borçlu da çıkabilirsin :D \nSorularda boş geçmek yoktur \nKABUL EDİYORSAN ENTER TUŞUNA BASARAK DEVAM EDİNİZ ");
+            Console.ReadKey();
+            string c1, c2;
+            Console.WriteLine("SORU1******");
+            Console.Write("29 Ekim 1923 hangi bayramın tarihidir?? \n(A Cumhuriyet Bayramı \n(B Kurban Bayramı \n(C Atatürk'ü Anma Gençlik Ve Spor Bayramı \n(D Ramazan Bayramı\n");            
+            c1 = Console.ReadLine();
+            c2 = c1.ToUpper();
+
+
+
+            if (c2=="A")
+            {
+                Console.WriteLine("Doğru cevap");
+                para = para + 1000;
+                dogru = dogru + 1;
+            }
+            else
+            {
+                Console.WriteLine("yanlıs cevap");
+                para = para - 1000;
+                yanlıs = yanlıs + 1;
+            }
+
+            Console.WriteLine("SORU2******");
+            Console.WriteLine("Türkiye'nin başkenti neresidir? \n(A Çankırı\n(B Ankara\n(C Bursa\n(D Antalya");
+            string c4;
+            string c3 = Console.ReadLine();
+            c4 = c3.ToUpper();
+
+            if (c4 == "B")
+            {
+                Console.WriteLine("Doğru cevap");
+                para = para + 1000;
+                dogru = dogru + 1;
+            }
+            else
+            {
+                Console.WriteLine("yanlıs cevap");
+                para = para - 1000;
+                yanlıs = yanlıs + 1;
+            }
+
+            Console.WriteLine("SORU3******");
+            Console.WriteLine("Çankırı aşağıdakilerden hangisine komşu değildir? \n(A Ankara\n(B Kastamonu\n(C Bursa\n(D Çorum");
+            string c6;
+            string c5 = Console.ReadLine();
+            c6 = c5.ToUpper();
+
+            if (c6 == "C")
+            {
+                Console.WriteLine("Doğru cevap");
+                para = para + 1000;
+                dogru = dogru + 1;
+            }
+            else
+            {
+                Console.WriteLine("yanlıs cevap");
+                para = para - 1000;
+                yanlıs = yanlıs + 1;
+            }
+
+            Console.WriteLine("YARIŞMA SONA ERDİ\nKATILDIĞINIZ İÇİN TEŞEKKÜR EDERİZ");
+            Console.WriteLine("paranız:{0}\n dogru sayınız:{1}\n yanlıs sayınız:{2}\n", para, dogru, yanlıs);
+            Console.Read();
+               
+        }
+    }
+}
