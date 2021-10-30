@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace ConsoleApp48
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StreamWriter dosya = new StreamWriter(@"C:\Users\furkan\Desktop\notlarım\Gün 1.txt");
+            string veri;
+            Console.Write("buraya notunuzu yazın");
+            veri = Console.ReadLine();
+            dosya.WriteLine(veri);
+            dosya.Close();
+
+        }
+    }
+}
