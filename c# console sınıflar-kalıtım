@@ -1,0 +1,37 @@
+namespace ConsoleApp53
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // kalıtım örneği
+            // bir kişinin 1 tane kalıtımı olur 2 olmaz !! ,interfacede olabilir classların tek başına anlamı var fakat interfacelerin yok
+            Person[] persons = new Person[3]
+            {
+                new Customer{FirstName="Hasan" },new Student{FirstName="Furkan" },new Person{FirstName="Osman"}
+            };
+            foreach(var person in persons)
+            {
+                Console.WriteLine(person.FirstName);
+            }
+            Console.Read();
+        }
+    }
+
+    class Person
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+
+    class Customer : Person
+    {
+        public string Department { get; set; }
+    }
+
+    class Student : Person
+    {
+
+    }
+}
